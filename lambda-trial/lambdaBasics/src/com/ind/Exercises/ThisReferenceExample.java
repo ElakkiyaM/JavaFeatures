@@ -1,0 +1,26 @@
+package com.ind.Exercises;
+
+public class ThisReferenceExample {
+
+	public static void main(String[] args) {
+		ThisReferenceExample thisRef = new ThisReferenceExample();
+		thisRef.execute();
+	}
+	
+	public void doProcess(int i, Process p) {
+		p.process(i);
+	}
+
+	/*
+	 * Though the lambda expression is created as the instance method instead of
+	 * static method, this refers to the instance of ThisReferenceExample and not
+	 * the instance of lambda.
+	 * NO OVERRIDING HAPPENS.
+	 */
+	public void execute() {
+		doProcess(10, i -> {
+			System.out.println("Value of i is "+i);
+			System.out.println(this);
+		});
+	}
+}
