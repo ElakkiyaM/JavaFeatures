@@ -1,0 +1,19 @@
+package com.ind.Exercises;
+
+public class ExceptionHandlingEx {
+
+	public static void main(String[] args) {
+	
+		int[] numbers = {1,2,3,4,5};
+		int key = 2;
+		
+		processOperations(numbers, key)
+
+	}
+
+	private static void processOperations(int[] numbers, int key) {
+		
+		
+	}
+
+}

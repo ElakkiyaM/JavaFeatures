@@ -1,0 +1,14 @@
+package com.ind;
+
+public class PolymorphismInJ7 {
+
+	public void Greet(Greeting greeting) {
+		greeting.perform();
+	}
+	public static void main(String[] args) {
+		PolymorphismInJ7 poly = new PolymorphismInJ7();
+		 
+		
+	}
+
+}

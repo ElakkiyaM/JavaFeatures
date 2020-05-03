@@ -1,0 +1,5 @@
+package com.ind.Exercises.model;
+
+public class Person {
+
+}

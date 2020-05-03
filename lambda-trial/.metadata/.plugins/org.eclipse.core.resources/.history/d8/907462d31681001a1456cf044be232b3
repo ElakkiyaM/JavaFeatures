@@ -1,0 +1,16 @@
+package com.ind.Exercises;
+
+public class ThisReferenceExample {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public void doProcess(int i, Process p) {
+		p.process(i);
+	}
+
+	public void execute() {
+		
+	}
+}

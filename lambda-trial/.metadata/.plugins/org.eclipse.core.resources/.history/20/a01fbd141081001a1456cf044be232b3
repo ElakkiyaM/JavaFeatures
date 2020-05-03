@@ -1,0 +1,14 @@
+package com.ind.Exercises;
+
+public class ClosuresExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+interface process {
+	void process(int i);
+}

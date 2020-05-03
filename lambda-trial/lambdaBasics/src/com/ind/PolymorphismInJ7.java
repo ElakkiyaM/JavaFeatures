@@ -1,5 +1,8 @@
 package com.ind;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PolymorphismInJ7 {
 
 	public void Greet(Greeting greeting) {
@@ -23,6 +26,9 @@ public class PolymorphismInJ7 {
 			 }
 		 };		 
 		poly.Greet(innerClassGreeting);
+		
+		List<Integer> initialArray = new ArrayList<>(3);
+		System.out.println(initialArray.size());
 	}
  
 }

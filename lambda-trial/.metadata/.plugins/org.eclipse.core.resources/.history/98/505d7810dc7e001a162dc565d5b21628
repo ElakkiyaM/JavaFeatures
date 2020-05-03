@@ -1,0 +1,41 @@
+package com.ind.Exercises;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import com.ind.Exercises.model.Person;
+
+public class PrblmStmt1J7Soln {
+
+	public static void main(String[] args) {
+
+		List<Person> people = Arrays.asList(
+				new Person("Charles", "Dickens", 60), 
+				new Person("Levis", "Corroll", 30),
+				new Person("Thomas", "corlyle", 64), 
+				new Person("Charlotte", "Brante", 45),
+				new Person("Mathew", "Arnold", 39));
+
+		// step-1:sort list by last name
+		Collections.sort(people, new Comparator<Person>() {
+			@Override
+			public int compare(Person o1, Person o2) {
+				return o2.getLastName().compareTo(o1.getLastName());
+			}
+		});
+		// step-2: create a method that prints all elements in the list
+		printAll(people);
+		// step-3: create a method that prints people having the lastname starting with
+		// C
+
+	}
+
+	private static void printAll(List<Person> people) {
+		for(Person p : people) {
+			System.out.println(p);
+		}
+		
+	}
+
+}

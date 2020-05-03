@@ -1,0 +1,27 @@
+package com.ind.Exercises;
+
+public class ClosuresExample {
+
+	public static void main(String[] args) {
+		int i = 10;
+		doProcess(i, new Process(){
+
+			@Override
+			public void process(int i) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+		});
+
+	}
+	
+	static void doProcess(int i, Process p) {
+		p.process(i);
+	}
+
+}
+
+interface Process {
+	void process(int i);
+}

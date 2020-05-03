@@ -1,0 +1,15 @@
+package com.ind.Exercises;
+
+import java.util.List;
+import com.ind.Exercises.model.Person;
+
+public class PrblmStmt1Soln {
+
+	public static void main(String[] args) {
+		
+		List<Person> p
+		
+		//step-1:sort list by last name
+	}
+
+}

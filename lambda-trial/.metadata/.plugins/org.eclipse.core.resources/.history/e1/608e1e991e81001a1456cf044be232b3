@@ -1,0 +1,8 @@
+package com.ind.Exercises;
+
+public class StreamsExample {
+
+	public static void main(String[] args) {
+		
+	}
+}

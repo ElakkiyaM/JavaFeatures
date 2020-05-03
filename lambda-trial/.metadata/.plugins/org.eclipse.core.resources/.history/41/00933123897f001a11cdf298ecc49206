@@ -1,0 +1,47 @@
+package com.ind.Exercises;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+import com.ind.Exercises.model.Person;
+
+public class PrblmStmt1LambdaSoln {
+	
+	public static void main(String[] args) {
+
+		List<Person> people = Arrays.asList(
+				new Person("Charles", "Dickens", 60), 
+				new Person("Levis", "Corroll", 30),
+				new Person("Thomas", "Corlyle", 64), 
+				new Person("Charlotte", "Brante", 45),
+				new Person("Mathew", "Arnold", 39));
+		
+	//sort the list by last name
+		Collections.sort(people, (p1,p2) -> p1.getLastName().compareTo(p2.getLastName()));
+	
+	// print all persons
+		System.out.println("---------  Printing all the persons ---------");
+		printConditionally(people, p -> true);
+	
+	// print persons with last name c
+		System.out.println("---------- Printing persons with lastname C -------");
+		printConditionally(people, p -> p.getLastName().startsWith("C"));
+		
+	// print persons with first name c
+		System.out.println(" ------- Printing persons with firstname C --------");
+		printConditionally(people, p -> p.getFirstName().startsWith("C"));
+	
+	}
+	
+	public static void printConditionally(List<Person> people, Condition condition) {
+		for (Person p : people) {
+			if(condition.test(p)) {
+				System.out.println(p);
+			}
+		}
+	}
+	
+
+}
+

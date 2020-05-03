@@ -1,0 +1,13 @@
+package com.ind.Exercises;
+
+public class MethodReferenceExample {
+
+	public static void main(String[] args) {
+		Thread t = new Thread(()->)
+	}
+	
+	public static void printMessage() {
+		System.out.println("Hello Scorpion");
+	}
+
+}

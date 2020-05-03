@@ -1,0 +1,12 @@
+package com.ind.Exercises;
+
+public class PrblmStmt1Soln {
+
+	public static void main(String[] args) {
+		
+		List<People> 
+		
+		//step-1:sort list by last name
+	}
+
+}

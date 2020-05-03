@@ -1,0 +1,6 @@
+package com.ind;
+
+@FunctionalInterface
+public interface Greeting {	
+	public void perform();
+}

@@ -1,0 +1,16 @@
+package com.ind;
+
+public class TypeInferenceExample {
+
+	public static void main(String[] args) {
+		
+	StringLengthLambda stringLambda = s -> s.length();
+	System.out.println(stringLambda.getLength("Hello Aadhvick Sai"));
+
+	}
+
+	interface StringLengthLambda {
+		int getLength(String s);
+	}
+}
+

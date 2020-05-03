@@ -1,0 +1,7 @@
+package com.ind;
+
+public interface Greeting {
+	
+	public void perform();
+
+}

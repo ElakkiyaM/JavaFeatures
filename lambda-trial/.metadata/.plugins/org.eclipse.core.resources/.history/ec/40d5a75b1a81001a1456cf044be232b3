@@ -1,0 +1,38 @@
+package com.ind.Exercises;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+
+import com.ind.Exercises.model.Person;
+
+public class MethodReferenceExample {
+
+	public static void main(String[] args) {
+		
+		List<Person> people = Arrays.asList(
+				new Person("Charles", "Dickens", 60), 
+				new Person("Levis", "Corroll", 30),
+				new Person("Thomas", "Corlyle", 64), 
+				new Person("Charlotte", "Brante", 45),
+				new Person("Mathew", "Arnold", 39));
+		
+		Thread t = new Thread(MethodReferenceExample::printMessage);
+		//MethodReferenceExample::printMessage === ()->printMessage()
+		t.start();
+	}
+	
+	public static void printMessage() {
+		System.out.println("Hello Scorpion");
+	}
+	
+	public static void printConditionally(List<Person> people, Predicate<Person> predicate, Consumer<Person> consumer ) {
+		for (Person p: people) {
+			if(predicate.test(p)) {
+				consumer.accept(p);
+			}
+		}
+	}
+
+}

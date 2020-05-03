@@ -1,0 +1,9 @@
+package com.ind.Exercises;
+
+public class ThisReferenceExample {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

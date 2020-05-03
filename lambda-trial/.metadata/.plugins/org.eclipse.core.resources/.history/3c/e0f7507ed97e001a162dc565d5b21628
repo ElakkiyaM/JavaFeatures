@@ -1,0 +1,21 @@
+package com.ind.Exercises;
+
+import java.util.Arrays;
+import java.util.List;
+import com.ind.Exercises.model.Person;
+
+public class PrblmStmt1Soln {
+
+	public static void main(String[] args) {
+		
+		List<Person> people = Arrays.asList(
+				new Person("Aadhvick Sai", "Nagenthiran", 2),
+				new Person("Nagenthiran", "Muthu", 30),
+				new Person("Murugan", "Esakki", 64),
+				new Person("Ramalakshmi", "Velayutham", 50),
+				new Person("Sri Ganesh", "Murugan", 24))
+		
+		//step-1:sort list by last name
+	}
+
+}

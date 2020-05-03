@@ -1,0 +1,14 @@
+package com.ind;
+
+public class TypeInferenceExample {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+	interface StringLengthLambda() {
+		int getLength(string s);
+	}
+}
+
